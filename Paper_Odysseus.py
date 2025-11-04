@@ -382,7 +382,7 @@ class TestApp(EClient, EWrapper):
         )
 
 app = TestApp()
-app.connect("127.0.0.1", port, 0)
+app.connect("54.242.57.2", port, 0)
 
 threading.Thread(target=app.run).start()
 time.sleep(2)
@@ -391,4 +391,5 @@ app.reqGlobalCancel(ordercancelor)
 app.Kelly()
 
 time.sleep(2)
+
 app.disconnect()
